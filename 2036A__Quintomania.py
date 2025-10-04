@@ -1,3 +1,10 @@
+"""
+Problem: Quintomania
+Rating: 800
+Tags: implementation
+Link: https://codeforces.com/problemset/problem/2036/A
+"""
+
 t=int(input())
 for i in range(t):
     n=int(input())
