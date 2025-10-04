@@ -1,3 +1,10 @@
+"""
+Problem: Robin Helps
+Rating: 800
+Tags: greedy, implementation
+Link: https://codeforces.com/problemset/problem/2014/A
+"""
+
 t=int(input())
 for i in range(t):
     n,k=map(int, input().split())
