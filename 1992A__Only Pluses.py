@@ -1,3 +1,10 @@
+"""
+Problem: Only Pluses
+Rating: 800
+Tags: brute force, constructive algorithms, greedy, math, sortings
+Link: https://codeforces.com/problemset/problem/1992/A
+"""
+
 t=int(input())
 for i in range(t):
     a,b,c=map(int, input().split())
