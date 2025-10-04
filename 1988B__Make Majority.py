@@ -1,3 +1,10 @@
+"""
+Problem: Make Majority
+Rating: 900
+Tags: greedy, implementation
+Link: https://codeforces.com/problemset/problem/1988/B
+"""
+
 user=int(input())
 for i in range(user):
     user2=int(input())
