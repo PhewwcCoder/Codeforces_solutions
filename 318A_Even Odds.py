@@ -1,3 +1,10 @@
+"""
+Problem: Even Odds
+Rating: 900
+Tags: math
+Link: https://codeforces.com/problemset/problem/318/A
+"""
+
 import math
 n,k=map(int, input().split())
 if n%2==0:
