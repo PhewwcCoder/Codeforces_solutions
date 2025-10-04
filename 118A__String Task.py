@@ -1,3 +1,10 @@
+"""
+Problem: String Task
+Rating: 1000
+Tags: implementation, strings
+Link: https://codeforces.com/problemset/problem/118/A
+"""
+
 s=input().lower()
 output=""
 for i in s:
