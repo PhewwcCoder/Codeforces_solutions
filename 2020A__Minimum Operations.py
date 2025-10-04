@@ -1,3 +1,10 @@
+"""
+Problem: Find Minimum Operations
+Rating: 800
+Tags: bitmasks, brute force, greedy, math, number theory
+Link: https://codeforces.com/problemset/problem/2020/A
+"""
+
 t=int(input())
 for i in range(t):
     n,k=map(int, input().split())
