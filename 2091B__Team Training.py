@@ -1,3 +1,10 @@
+"""
+Problem: Team Training
+Rating: 800
+Tags: dp, greedy, sortings
+Link: https://codeforces.com/problemset/problem/2091/B
+"""
+
 t=int(input())
 for i in range(t):
     n,x= map(int, input().split())
