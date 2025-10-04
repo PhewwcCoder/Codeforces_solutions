@@ -1,3 +1,10 @@
+"""
+Problem: DIY
+Rating: 1400
+Tags: data structures, geometry, greedy, sortings
+Link: https://codeforces.com/problemset/problem/2038/C
+"""
+
 def solve():
     a = int(input())
     ques = list(map(int, input().split()))
