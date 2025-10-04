@@ -1,3 +1,10 @@
+"""
+Problem: Chat room
+Rating: 1000
+Tags: greedy, strings
+Link: https://codeforces.com/problemset/problem/58/A
+"""
+
 s=input()
 key='hello'
 result=''
