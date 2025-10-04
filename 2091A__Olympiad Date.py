@@ -1,3 +1,10 @@
+"""
+Problem: Olympiad Date
+Rating: 800
+Tags: greedy, strings
+Link: https://codeforces.com/problemset/problem/2091/A
+"""
+
 t=int(input())
 for i in range(t):
     n= int(input())
