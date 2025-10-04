@@ -1,3 +1,10 @@
+"""
+Problem: Ultra-Fast Mathematician
+Rating: 800
+Tags: implementation
+Link: https://codeforces.com/problemset/problem/61/A
+"""
+
 a=input()
 b=input()
 output=""
