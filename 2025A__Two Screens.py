@@ -1,3 +1,10 @@
+"""
+Problem: Two Screens
+Rating: 800
+Tags: binary search, greedy, strings, two pointers
+Link: https://codeforces.com/problemset/problem/2025/A
+"""
+
 q=int(input())
 for i in range(q):
     s=input()
