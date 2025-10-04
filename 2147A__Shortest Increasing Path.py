@@ -1,3 +1,10 @@
+"""
+Problem: Shortest Increasing Path
+Rating: 800
+Tags: constructive algorithms, greedy
+Link: https://codeforces.com/problemset/problem/2147/A
+"""
+
 import sys
 input = sys.stdin.readline
 t = int(input())
