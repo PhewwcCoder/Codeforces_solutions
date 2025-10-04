@@ -1,3 +1,10 @@
+"""
+Problem: Square or Not
+Rating: 800
+Tags: brute force, math, strings
+Link: https://codeforces.com/problemset/problem/2008/B
+"""
+
 import math
 t=int(input())
 for i in range(t):
