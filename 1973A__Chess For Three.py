@@ -1,3 +1,10 @@
+"""
+Problem: Chess For Three
+Rating: 900
+Tags: brute force, dp, implementation, math
+Link: https://codeforces.com/problemset/problem/1973/A
+"""
+
 t=int(input())
 for i in range(t):
     z=list(map(int,input().split()))
