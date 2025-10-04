@@ -1,3 +1,10 @@
+"""
+Problem: Angry Monk
+Rating: 800
+Tags: greedy, math, sortings
+Link: https://codeforces.com/problemset/problem/1992/B
+"""
+
 t=int(input())
 for _ in range(t):
     n,n2=map(int, input().split())
