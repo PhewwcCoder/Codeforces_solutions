@@ -1,3 +1,10 @@
+"""
+Problem: Twins
+Rating: 900
+Tags: greedy, sortings
+Link: https://codeforces.com/problemset/problem/160/A
+"""
+
 n=int(input())#number of coins
 a=list(map(int, input().split()))
 a.sort()
