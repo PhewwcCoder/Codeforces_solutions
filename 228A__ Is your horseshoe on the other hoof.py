@@ -1,3 +1,10 @@
+"""
+Problem: Is your horseshoe on the other hoof?
+Rating: 800
+Tags: implementation
+Link: https://codeforces.com/problemset/problem/228/A
+"""
+
 a,b,c,d=map(int, input().split())
 output=0
 if a==b:
