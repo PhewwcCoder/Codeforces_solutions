@@ -1,3 +1,10 @@
+"""
+Problem: In Search of an Easy Problem
+Rating: 800
+Tags: implementation
+Link: https://codeforces.com/problemset/problem/1030/A
+"""
+
 n=int(input())
 a=input().split()
 flag=True
