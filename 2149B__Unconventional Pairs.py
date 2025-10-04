@@ -1,3 +1,10 @@
+"""
+Problem: Unconventional Pairs
+Rating: 800
+Tags: greedy, sortings
+Link: https://codeforces.com/problemset/problem/2149/B
+"""
+
 import sys
 input = sys.stdin.readline
 t = int(input())
