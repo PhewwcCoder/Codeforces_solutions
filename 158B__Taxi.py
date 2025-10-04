@@ -1,3 +1,10 @@
+"""
+Problem: Taxi
+Rating: 1100
+Tags: *special, greedy, implementation
+Link: https://codeforces.com/problemset/problem/158/B
+"""
+
 n= int(input())
 s=list(map(int, input().split()))
 count1=0
