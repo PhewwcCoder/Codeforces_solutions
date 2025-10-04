@@ -1,3 +1,10 @@
+"""
+Problem: osu!mania
+Rating: 800
+Tags: brute force, implementation
+Link: https://codeforces.com/problemset/problem/2009/B
+"""
+
 t=int(input())
 for i in range(t):
     n=int(input())
