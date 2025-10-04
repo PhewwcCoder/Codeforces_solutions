@@ -1,3 +1,10 @@
+"""
+Problem: Sakurako's Exam
+Rating: 800
+Tags: brute force, constructive algorithms, greedy, math
+Link: https://codeforces.com/problemset/problem/2008/A
+"""
+
 t=int(input())
 list1=[]
 list2=[]
