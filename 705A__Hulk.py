@@ -1,3 +1,10 @@
+"""
+Problem: Hulk
+Rating: 800
+Tags: implementation
+Link: https://codeforces.com/problemset/problem/705/A
+"""
+
 s=int(input())
 output=""
 for i in range(s):
