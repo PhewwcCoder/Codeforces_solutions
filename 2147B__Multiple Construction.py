@@ -1,3 +1,10 @@
+"""
+Problem: Multiple Construction
+Rating: 1000
+Tags: constructive algorithms
+Link: https://codeforces.com/problemset/problem/2147/B
+"""
+
 import sys
 input = sys.stdin.readline
 t = int(input())
