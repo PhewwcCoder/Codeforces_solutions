@@ -1,3 +1,10 @@
+"""
+Problem: Vanya and Fence
+Rating: 800
+Tags: implementation
+Link: https://codeforces.com/problemset/problem/677/A
+"""
+
 n,h=map(int, input().split())
 user=list(map(int, input().split()))
 count=0
