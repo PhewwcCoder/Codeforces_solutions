@@ -1,3 +1,10 @@
+"""
+Problem: Expression
+Rating: 1000
+Tags: brute force, math
+Link: https://codeforces.com/problemset/problem/479/A
+"""
+
 a=int(input())
 b=int(input())
 c=int(input())
