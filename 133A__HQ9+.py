@@ -1,3 +1,10 @@
+"""
+Problem: HQ9+
+Rating: 900
+Tags: implementation
+Link: https://codeforces.com/problemset/problem/133/A
+"""
+
 p = input().strip()
 has_output = False
 for c in p:
