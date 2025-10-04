@@ -1,3 +1,10 @@
+"""
+Problem: Presents
+Rating: 800
+Tags: implementation
+Link: https://codeforces.com/problemset/problem/136/A
+"""
+
 n=int(input())
 s=list(map(int, input().split()))
 d={}
