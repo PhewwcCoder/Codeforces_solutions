@@ -1,3 +1,10 @@
+"""
+Problem: Be Positive
+Rating: 800
+Tags: math
+Link: https://codeforces.com/problemset/problem/2149/A
+"""
+
 import sys
 input = sys.stdin.readline
 t = int(input())
