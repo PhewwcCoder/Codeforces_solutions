@@ -1,3 +1,10 @@
+"""
+Problem: Hotelier
+Rating: 800
+Tags: brute force, data structures, implementation
+Link: https://codeforces.com/problemset/problem/1200/A
+"""
+
 n=int(input())
 s=input()
 output=[0,0,0,0,0,0,0,0,0,0]
