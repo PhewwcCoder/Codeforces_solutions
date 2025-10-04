@@ -1,3 +1,10 @@
+"""
+Problem: Wonderful Gloves
+Rating: 1100
+Tags: greedy, math, sortings
+Link: https://codeforces.com/problemset/problem/2096/B
+"""
+
 t = int(input())
 for i in range(t):
     n,k = map(int, input().split())
