@@ -1,3 +1,10 @@
+"""
+Problem: Pangram
+Rating: 800
+Tags: implementation, strings
+Link: https://codeforces.com/problemset/problem/520/A
+"""
+
 import sys
 input = sys.stdin.readline
 n = int(input())
