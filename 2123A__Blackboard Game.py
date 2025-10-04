@@ -1,3 +1,10 @@
+"""
+Problem: Blackboard Game
+Rating: 800
+Tags: math
+Link: https://codeforces.com/problemset/problem/2123/A
+"""
+
 t = int(input())
 for i in range(t):
     n = int(input())
