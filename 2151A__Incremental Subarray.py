@@ -1,3 +1,10 @@
+"""
+Problem: Incremental Subarray
+Rating: 800
+Tags: math, strings
+Link: https://codeforces.com/problemset/problem/2151/A
+"""
+
 import sys
 input = sys.stdin.readline
 def is_strictly_sorted(lst) -> bool:
