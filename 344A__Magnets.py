@@ -1,3 +1,10 @@
+"""
+Problem: Magnets
+Rating: 800
+Tags: implementation
+Link: https://codeforces.com/problemset/problem/344/A
+"""
+
 n=int(input())
 prev=input()
 count=0
