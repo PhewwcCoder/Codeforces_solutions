@@ -1,3 +1,10 @@
+"""
+Problem: Beautiful Matrix
+Rating: 800
+Tags: implementation
+Link: https://codeforces.com/problemset/problem/263/A
+"""
+
 matrix=[]
 for i in range(5):
     matrix.append(list(map(int, input().split())))
