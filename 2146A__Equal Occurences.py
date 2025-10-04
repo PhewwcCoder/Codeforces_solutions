@@ -1,3 +1,10 @@
+"""
+Problem: Equal Occurrences
+Rating: 800
+Tags: brute force, greedy, implementation
+Link: https://codeforces.com/problemset/problem/2146/A
+"""
+
 import sys,operator
 from collections import Counter
 input = sys.stdin.readline
