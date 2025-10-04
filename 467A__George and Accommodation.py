@@ -1,3 +1,10 @@
+"""
+Problem: George and Accommodation
+Rating: 800
+Tags: implementation
+Link: https://codeforces.com/problemset/problem/467/A
+"""
+
 n=int(input())
 count=0
 for i in range(n):
