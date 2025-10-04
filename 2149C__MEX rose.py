@@ -1,3 +1,10 @@
+"""
+Problem: MEX rose
+Rating: 900
+Tags: greedy
+Link: https://codeforces.com/problemset/problem/2149/C
+"""
+
 import sys
 input = sys.stdin.readline
 t = int(input())
