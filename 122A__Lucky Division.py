@@ -1,3 +1,10 @@
+"""
+Problem: Lucky Division
+Rating: 1000
+Tags: brute force, number theory
+Link: https://codeforces.com/problemset/problem/122/A
+"""
+
 def lucky(n):
     str_n=str(n)
     count=0
