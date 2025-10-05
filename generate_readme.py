@@ -3,6 +3,7 @@ import re
 import requests
 from pathlib import Path
 from collections import defaultdict
+from datetime import datetime
 
 class ReadmeGenerator:
     def __init__(self):
@@ -69,6 +70,17 @@ class ReadmeGenerator:
         
         return solutions
     
+    def get_rating_title(self, rating_range):
+        """Get proper title for each rating range"""
+        titles = {
+            '800-1000': '🟢 Newbie (800-1000)',
+            '1000-1200': '🟢 Pupil (1000-1200)',
+            '1200-1400': '🟦 Specialist (1200-1400)',
+            '1400-1600': '🟦 Expert (1400-1600)',
+            'Unrated': '⚪ Unrated'
+        }
+        return titles.get(rating_range, rating_range)
+    
     def generate_readme(self):
         """Generate README.md file"""
         if not self.fetch_all_problems():
@@ -77,23 +89,35 @@ class ReadmeGenerator:
         solutions = self.get_solutions_by_rating()
         total_problems = sum(len(sols) for sols in solutions.values())
         
-        readme_content = f"""# 🎯 Codeforces Solutions
+        readme_content = f"""# 🎯 Codeforces Solutions in Python
 
-A collection of my Codeforces problem solutions, organized by difficulty rating.
+> **Why Python?** While most competitive programmers use C++ for its speed, I've chosen Python to prove that elegant, readable code can be just as competitive. Every solution here demonstrates that algorithmic thinking matters more than language choice.
 
 ## 📊 Statistics
 
 - **Total Problems Solved:** {total_problems}
-- **Languages:** Python
-- **Last Updated:** Auto-generated
+- **Languages:** Python 🐍
+- **Profile:** [PhewwcCoder](https://codeforces.com/profile/PhewwcCoder)
+- **Last Updated:** {datetime.now().strftime('%B %d, %Y')}
+
+## 💡 Why Python for Competitive Programming?
+
+Most competitive programmers choose C++ for its blazing speed, but I've taken a different path:
+
+- **🧠 Readability First:** Clean, maintainable code that's easy to understand and debug
+- **⚡ Smart Optimization:** Proving that algorithmic efficiency beats language speed
+- **🎯 Focus on Logic:** Less time wrestling with syntax, more time solving problems
+- **🐍 Python Power:** Built-in data structures, elegant syntax, rapid prototyping
+
+**The Challenge:** Making Python competitive where others say it's too slow. Spoiler: It works!
 
 ## 📁 Repository Structure
 
-Solutions are organized by rating ranges:
-- `800-1000/` - Beginner-friendly problems
-- `1000-1200/` - Easy problems
-- `1200-1400/` - Medium difficulty
-- `1400-1600/` - Intermediate problems
+Solutions are organized by Codeforces rating ranges:
+- `800-1000/` - 🟢 Newbie level
+- `1000-1200/` - 🟢 Pupil level  
+- `1200-1400/` - 🟦 Specialist level
+- `1400-1600/` - 🟦 Expert level
 - `Unrated/` - Problems without official rating
 
 ## 🗂️ Solutions by Rating
@@ -105,19 +129,21 @@ Solutions are organized by rating ranges:
         for rating_folder in rating_order:
             if rating_folder in solutions and solutions[rating_folder]:
                 sols = solutions[rating_folder]
-                readme_content += f"### {rating_folder} ({len(sols)} problems)\n\n"
-                readme_content += "| Problem | Rating | Tags |\n"
-                readme_content += "|---------|--------|------|\n"
+                title = self.get_rating_title(rating_folder)
+                readme_content += f"### {title}\n"
+                readme_content += f"**{len(sols)} problems**\n\n"
+                readme_content += "| Problem | Rating | Tags | Solution |\n"
+                readme_content += "|---------|--------|------|----------|\n"
                 
                 for sol in sols:
                     problem_link = f"https://codeforces.com/problemset/problem/{sol['contest_id']}/{sol['index']}"
                     problem_name = f"[{sol['contest_id']}{sol['index']} - {sol['name']}]({problem_link})"
-                    solution_link = f"[Solution]({sol['relative_path']})"
+                    solution_link = f"[Code]({sol['relative_path']})"
                     
                     tags = ', '.join(sol['tags'][:3]) if sol['tags'] else 'implementation'
                     rating_badge = f"`{sol['rating']}`" if sol['rating'] != 'Unrated' else '`Unrated`'
                     
-                    readme_content += f"| {problem_name} {solution_link} | {rating_badge} | {tags} |\n"
+                    readme_content += f"| {problem_name} | {rating_badge} | {tags} | {solution_link} |\n"
                 
                 readme_content += "\n"
         
@@ -125,17 +151,22 @@ Solutions are organized by rating ranges:
 
 ## 🚀 How to Use
 
-1. Browse solutions by rating category
-2. Each solution file contains:
-   - Problem metadata (rating, tags, link)
-   - Clean, commented code
-   - Optimal solution approach
+1. **Browse by difficulty:** Solutions are organized by rating ranges
+2. **Click problem names:** Opens the problem on Codeforces
+3. **View solutions:** Click "Code" to see my Python implementation
+4. **Learn & adapt:** Each solution includes clean, commented code
+
+Each solution demonstrates:
+- Optimal algorithmic approach
+- Python-specific optimizations
+- Clean, readable code structure
 
 ## 📝 Notes
 
-- All solutions are tested and accepted on Codeforces
-- Solutions focus on clarity and efficiency
-- README is auto-generated using `generate_readme.py`
+- ✅ All solutions are **tested and accepted** on Codeforces
+- 🐍 Python solutions competing with C++ implementations
+- 🧹 Code focuses on **clarity and efficiency**
+- 🤖 README auto-generated with `generate_readme.py`
 
 ## 🔗 Links
 
@@ -144,7 +175,7 @@ Solutions are organized by rating ranges:
 
 ---
 
-*Last generated: Auto-updated*
+*Generated automatically with Python*
 """
         
         readme_path = self.folder_path / "README.md"
