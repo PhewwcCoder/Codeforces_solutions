@@ -1,0 +1,17 @@
+# Local workflow guide - never push
+WORKFLOW.md
+WORKFLOW.txt
+
+# Processed files log
+.cf_processed.txt
+
+# Git commit mapping
+.commit_mapping.txt
+
+# Personal notes
+notes.txt
+TODO.txt
+
+# Python cache
+__pycache__/
+*.pyc
